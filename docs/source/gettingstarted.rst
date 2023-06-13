@@ -101,6 +101,7 @@ Build Async VOL
     mkdir build
     cd build
     export HDF5_DIR=$H5_DIR/install
+    export ABT_DIR=$ABT_DIR/install
     cmake -DCMAKE_INSTALL_PREFIX=$VOL_DIR/install -DCMAKE_C_COMPILER=mpicc ..
     make && make install
 
